@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register api/local.ts --respawn --transpileOnly",
     "build": "tsc && tsc-alias",
-    "start": "node dist/api/serverless.js"
+    "start": "node dist/api/serverless.js",
+    "vercel": "vercel dev"
   },
   "main": "dist/api/serverless.js",
   "keywords": [],
