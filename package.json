@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": {
+    "name": "Tawagot0",
+    "email": "joris@blabla.com"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev -r tsconfig-paths/register api/local.ts --respawn --transpileOnly",
+    "build": "tsc && tsc-alias",
+    "start": "node dist/api/serverless.js"
+  },
+  "main": "dist/api/serverless.js",
+  "keywords": [],
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@vercel/node": "^2.10.2",
+    "ts-node-dev": "^2.0.0",
+    "tsc-alias": "^1.8.5",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.2.1",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0"
+  }
+}

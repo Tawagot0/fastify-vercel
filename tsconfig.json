@@ -1,0 +1,25 @@
+{
+  "display": "Node.js",
+  "compilerOptions": {
+    "target": "es6",
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "@functions/*": ["src/functions/*"],
+      "@handlers/*": ["src/handlers/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@utils/*": ["src/utils/*"]
+    },
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*", "api/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
