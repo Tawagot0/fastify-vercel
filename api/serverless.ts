@@ -5,7 +5,7 @@ const app = Fastify({
   logger: true,
 });
 
-app.register(cors).register(import("@functions/index"));
+app.register(cors).register(import("../src/functions/index"));
 
 export default async (req: any, res: any) => {
   await app.ready();

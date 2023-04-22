@@ -11,13 +11,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
-    "paths": {
-      "@functions/*": ["src/functions/*"],
-      "@handlers/*": ["src/handlers/*"],
-      "@interfaces/*": ["src/interfaces/*"],
-      "@middlewares/*": ["src/middlewares/*"],
-      "@utils/*": ["src/utils/*"]
-    },
     "outDir": "./dist"
   },
   "include": ["src/**/*", "api/**/*"],
