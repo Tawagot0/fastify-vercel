@@ -1,0 +1,20 @@
+{
+  "display": "Node.js",
+  "compilerOptions": {
+    "target": "es6",
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@functions/*": ["./functions/*"]
+    },
+    "outDir": "../api"
+  },
+  "exclude": ["node_modules", "dist"]
+}
