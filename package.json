@@ -10,7 +10,6 @@
   "private": true,
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register api/local.ts --respawn --transpileOnly",
-    "build": "tsc && tsc-alias",
     "start": "node dist/api/serverless.js"
   },
   "main": "dist/api/serverless.js",
