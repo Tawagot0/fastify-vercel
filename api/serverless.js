@@ -40,7 +40,7 @@ const fastify_1 = __importDefault(require("fastify"));
 const app = (0, fastify_1.default)({
     logger: true,
 });
-app.register(cors_1.default).register(Promise.resolve().then(() => __importStar(require("../src/functions/index"))));
+app.register(cors_1.default).register(Promise.resolve().then(() => __importStar(require("./functions/index"))));
 exports.default = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     yield app.ready();
     app.server.emit("request", req, res);
