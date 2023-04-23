@@ -1,8 +1,21 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "build": {
+          "command": "pnpm run build"
+        },
+        "outputDirectory": "dist"
+      }
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/api/serverless.ts"
+      "destination": "/api/serverless.js"
     }
   ]
 }
